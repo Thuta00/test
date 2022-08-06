@@ -5,12 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../git test/css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <div class="body">
-        <div class="firstHalf"></div>
-        <div class="secHalf"></div>
+    <div class="container">
+        <div class="firstHalf">
+            <p class="ask">သင် ပြီးခဲ့ သော ၇လပိုင်းက လုပ်ဖို မေ့ နေခဲ့တဲ့အရာ၁ခုရှိခဲ့တယ် သိချင်ပါလား</p>
+        </div>
+        
+            <button class="btn">နှိပ်ရန်...>>>></button>    
+    </div>
+    <div class="box">
+        <p>၇လပိုင်းအတွက် သင့်က လေး တွေကို သင်မုန့်ဖိုး ပေးဖို မေ့ နေခဲ့ပါတယ်..(^_^)</p>
     </div>
 </body>
+<script src="/js/jquery.min.js"> 
+</script>
+<script>
+     $(document).ready(function(){
+        $('.btn').click(function(){
+            $(".container").hide(1000);
+            $(".box").show(2000);
+        })
+    })
+</script>
 </html>
